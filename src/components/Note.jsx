@@ -16,7 +16,6 @@ function createNote(noted) {
 function Note() {
   return (
     <div>{notes.map(createNote)}</div>
-    
   );
 }
 

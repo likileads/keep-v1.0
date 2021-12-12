@@ -1,3 +1,5 @@
+#### This is a simple notes keeping application.
+
 ## Available Scripts
 
 In the project directory, you can run:

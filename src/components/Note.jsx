@@ -1,12 +1,22 @@
 import React from "react";
+import Notes from "./eachNote"
+import notes from "../notes";
 
+function createNote(noted) {
+  return (
+    <Notes
+      key = {noted.key}
+      title = {noted.title}
+      content = {noted.content}
+    />
+  )
+}
 
+// parsing
 function Note() {
   return (
-    <div className="note">
-        <h1>Note1</h1>
-        <p>Note1's description goes here</p>
-    </div>
+    <div>{notes.map(createNote)}</div>
+    
   );
 }
 
